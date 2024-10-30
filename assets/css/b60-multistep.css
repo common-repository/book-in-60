@@ -1,0 +1,799 @@
+html {
+    margin-top: 0!important;
+}
+
+body {
+    font: 16px inherit !important;
+    color: #a0a4ab!important;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.6!important;
+    letter-spacing: unset!important;
+    margin:0;
+    padding:0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased!important;
+    word-break: unset!important;
+    word-wrap: unset!important;
+}
+
+ul, ol {
+     margin: 0 auto!important; 
+     padding: 0!important;
+}
+
+span {
+    color:#a0a4ab!important;
+}
+p {
+    margin: 0.85em 0!important;
+    color:#a0a4ab;
+}
+label {
+    /* font-weight: bold; */
+    font-size: 0.92em!important;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #999;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #999;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #999;
+}
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #fff;
+    z-index: 9999999;
+}
+
+.header-container {
+    box-shadow: 1px 10px 25px #f5f5f5;
+}
+
+.header-container ul li .green-border {
+    border-bottom: 3px solid #a1e941;
+}
+
+.header-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.header-text-container .title {
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    padding-top: 5px;
+}
+
+.header-text {
+    /*display: flex;*/
+    /*flex-flow: column;*/
+    padding-left: 10px;
+    line-height: 1.3;
+}
+
+.header-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+  vertical-align: middle;
+  border-right: 1px solid #e3e3e3;
+}
+
+.col .text {
+    font-weight: bold;
+    color: #585e63;
+    line-height: 1.3;
+}
+
+.col.logo {
+    width:165px;
+}
+
+.col.bedroom, .col.bathroom {
+    width:140px;
+}
+
+.col.address, .col.date, .col.service {
+    width:18%;
+}
+
+.col.address, .col.service {
+    font-size: 12px;
+}
+
+.col:last-child {
+    background: #585e63;
+    color:#fff;
+    font-size: 30px;
+}
+
+.col:last-child .header-text span {
+    color: #fff!important;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.col:last-child {
+    color:#fff;
+}
+
+.main-form {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.form-left {
+    width: 66.67%;
+    float:left;
+    margin: 30px 0;
+}
+.form-right {
+    width: 33.33%;
+    float:left;
+    margin: 30px 0;
+}
+.container {
+    padding:60px;
+    text-align: center;
+}
+.container.left {
+    margin-right: 20px;
+    text-align: left;
+    padding-top: 20px;
+    padding: 0;
+    border: 1px solid #e3e3e3;
+}
+span.booking-title {
+    text-align: center;
+    font-size: 35px;
+    display: block;
+    padding: 15px 0 0;
+    font-weight: bold;
+    color:#585e63!important;
+}
+span.booking-subtitle {
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 40px;
+    color: #a0a4ab;
+}
+span.booking-row-title {
+    display: block;
+    margin: 35px auto 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.right-box {
+    color: #797979;
+    font-weight: 400;
+    padding: 20px 10px;
+}
+.box-header {
+    font-weight: bold;
+    color: #3c3c3c;
+    margin: 10px 0 0;
+    display: block;
+}
+.booking-summary-header {
+    background: #f5f5f5;
+    text-transform: uppercase;
+    padding:15px 0;
+}
+.booking-summary-header p {
+    color:#585e63;
+    text-align: center;
+    margin: 0!important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.separator {
+    border-top: 1px solid #e3e3e3;
+    max-width: 95%;
+    margin: 30px auto;
+}
+.module-content {
+    border-color: #ebebeb;
+}
+.col-content {
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+}
+.entry-content-wrapper {
+    padding:10px 15px!important;
+    list-style-type:none;
+    margin-left: 0px;
+    text-align: left;
+}
+.entry-content-wrapper li {
+    padding: 3px 0;
+    margin:0!important;
+}
+.entry-content-wrapper.subtotal {
+    /*margin: 0 5%;*/
+}
+.booking-summary-left {
+    width: 55%;
+    display: inline-block;
+}
+.booking-summary-right {
+    width: 25%;
+    display: inline-block;
+    text-align: right;
+}
+.booking-subtotal-left {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+}
+.booking-subtotal-right {
+    width: 50%;
+    text-align: right;
+    display: inline-block;
+}
+.total-text {
+    /*font-weight: bold;*/
+}
+.total-price {
+    font-weight: 500;
+    font-size: 25px;
+    color: #8b3da3;
+}
+.booking-total-summary-left {
+    width: 33%;
+    display: inline-block;
+}
+.recurring-text {
+    font-weight: bold;
+    font-size: 25px;
+}
+.text-right {
+    text-align: right;
+}
+.separator {
+    border-top: 1px solid #e3e3e3;
+    max-width: 100%;
+    margin: auto;
+}
+.booking-total-summary-right {
+    text-align: right;
+    width: 66%;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 36px;
+    color: #8b3da3!important;
+}
+ul.form-container {
+    list-style-type: none;
+    padding: 0;
+}
+ul.form-container .header {
+    text-align: center;
+    padding-bottom:25px;
+}
+.form-container p {
+    padding: 0 40px;
+}
+span.booking-form-separator {
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    display: inline-block;
+    margin-top: 35px;
+}
+.home-access, .apply-coupon {
+    padding: 10px 40px;
+}
+.row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8, .row-9 {
+    margin-bottom:15px;
+}
+.row-11 {
+    font-size: 14px;
+}
+span.forms-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #444444!important;
+    display: block;
+    padding: 35px 40px 0;
+}
+ul.form-container li.field {
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+ul.form-container > li {
+    margin-left: 0;
+}
+ul.form-container li.field {
+    clear: both;
+}
+.form-container form li, .form-container li {
+    margin-left: 0!important;
+    list-style-type: none!important;
+    list-style-image: none!important;
+    list-style: none!important;
+    overflow: visible;
+}
+input:not([type='checkbox']), textarea, select {
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    padding: 10px!important;
+    outline: none;
+    font: 1em "Gilroy Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #a0a4ab;
+    margin: 0;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    border-radius: 0px;
+}
+ select {
+    -webkit-appearance: none;
+    border-radius: 0px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAYAAAC+ct6XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjBBRUQ1QTQ1QzkxMTFFMDlDNDdEQzgyNUE1RjI4MTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjBBRUQ1QTU1QzkxMTFFMDlDNDdEQzgyNUE1RjI4MTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGMEFFRDVBMjVDOTExMUUwOUM0N0RDODI1QTVGMjgxMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGMEFFRDVBMzVDOTExMUUwOUM0N0RDODI1QTVGMjgxMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pk5mU4QAAACUSURBVHjaYmRgYJD6////MwY6AyaGAQIspCieM2cOjKkIxCFA3A0TSElJoZ3FUCANxAeAWA6IOYG4iR5BjWwpCDQCcSnNgxoIVJCDFwnwA/FHWlp8EIpHSKoGgiggLkITewrEcbQO6mVAbAbE+VD+a3IsJTc7FQAxDxD7AbEzEF+jR1DDywtoCr9DbhwzDlRZDRBgACYqHJO9bkklAAAAAElFTkSuQmCC);
+    background-position: center right;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    display: inline-block;
+}
+.how-often label {
+    white-space: normal;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 15px;
+    padding: 20px 26px !important;
+    text-align: center;
+    width: 100%;
+    max-width: 95%;
+    margin: auto !important;
+    display: block;
+}
+.popular {
+    display: none;
+}
+ul.field_radio, ul.field_checkbox, ul.addon-services-checkbox {
+    padding:0;
+}
+ul.addon-services-checkbox {
+    padding: 10px 35px 0!important;
+    margin: 0 auto!important;
+}
+ul.field_radio li {
+    width: 20%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    margin: 0 10px;
+    min-height: 28px;
+    vertical-align: top;
+    font-size: 90%;
+    display: flex;
+    flex-direction: inherit;
+}
+ul.field_radio li input {
+    display: none;
+}
+ul.field_radio li label {
+    white-space: normal;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 15px;
+    padding: 15px 20px !important;
+    text-align: center;
+    width: 100%;
+    max-width: 95%;
+    margin: auto !important;
+    display:block;
+    cursor:pointer;
+}
+ul.field_radio li input:checked + label {
+    /* background: #8941e9; */
+    color: #8941e9;
+    border: 2px solid #8941e9;
+    box-shadow: 1px 5px 5px #f5f5f5;
+    font-weight: bold;
+}
+ul.field_checkbox, ul.field_radio {
+    margin: 6px 0;
+    padding: 0;
+    display: flex;
+}
+.addon-services-checkbox input {
+    display: none!important;
+}
+.addon-services-checkbox li.refrigerator label:before, .addon-services-checkbox li.oven label:before,
+.addon-services-checkbox li.pets label:before, .addon-services-checkbox li.saturday-service label:before,
+.addon-services-checkbox li.green-cleaning label:before, .addon-services-checkbox li.gift-card label:before {
+    border-radius: 5px;
+    display: block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background: #fff !important;
+    min-height:50px;
+    cursor: pointer;
+}
+.addon-services-checkbox li input:checked + label:before {
+    /*background: #8b3da3 !important;*/
+    border: 2px solid #8941e9;
+    box-shadow: 1px 5px 5px #f5f5f5;
+    box-sizing: border-box;
+}
+.addon-services-checkbox li input:checked + label {
+    color:#8941e9;
+}
+ul.addon-services-checkbox li {
+    width: 24%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    margin: 0;
+    min-height: 28px;
+    vertical-align: top;
+    font-size: 90%;
+    text-align: center;
+    padding: 7px;
+}
+#no-refrigerator, #no-oven {
+    display:none;
+}
+
+/*form styles*/
+#msform {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    background:#fff;
+    text-align: center;
+    position: relative;
+}
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: auto;
+    margin: 0 auto;
+    
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box!important;
+    color: #2C3E50;
+}
+/*buttons*/
+#msform .action-button {
+    width: 150px;
+    background: #8941e9;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 15px 15px;
+    margin: 60px auto;
+    font-family: 'Gilroy Regular';
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 0 2px #4f4c52;
+    display: inline-block;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    background:#a1e941;
+}
+/*headings*/
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #27AE60;
+    color: white;
+}
+
+#room {
+    width: 37%;
+    margin: 0 auto;
+}
+
+#bathroom {
+    width:30%;
+    margin: 0 auto;
+}
+
+#how-often {
+    width:52%;
+    margin: 0 auto;
+}
+
+#service-type {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.booking-service, .home-size {
+    width: 25%;
+}
+
+.address-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.m-t-xl {
+    margin-top:40px;
+}
+
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  -webkit-appearance: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    outline: none;
+    font: 1em "Gilroy Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #a0a4ab;
+    margin: 0;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    border-radius: 0px;  
+  box-sizing: border-box;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-form {
+    padding: 10px 40px;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 0 40px
+}
+
+#multisteps{
+    width: 100%;
+}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    font: 1em "Gilroy Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #a0a4ab;
+    margin: 0;
+    margin-top: 0;
+    border-radius: 0px;
+    width:auto!important;
+}
+
+.form-inline button {
+  padding: 0 30px;
+  background-color: #8941e9!important;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* box-shadow: 0 0 2px #4f4c52; */
+  outline: none;
+  border-radius: 0;
+  font-weight: bold;
+  height:40px;
+}
+
+.form-inline button:hover {
+  background-color: #a1e941!important;
+  text-decoration: none;
+}
+
+.form-inline button:disabled {
+  background-color: #dddddd!important;
+  text-decoration: none;
+}
+
+.popup-container {
+
+}
+
+#booking-form {
+}
+
+.popup_wrapper_visible {
+    z-index: 9999999!important;
+    background: #ffffff;
+}
+
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+    .form-container li.field.left_half, .form-container li.field.right_half {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        width: 48.5%;
+        padding-right: 0;
+        float: none;
+    }
+    .form-container li.field.left_3, .form-container li.field.middle_3, .form-container li.field.right_3 {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        width: 31.5%;
+        padding-right: 0;
+        float: none;
+    }
+    .form-container li .coupon_code {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        width: 80%!important;
+        padding-right: 0;
+        float: none;
+    }
+    .form-container li .coupon_button {
+        background: #8941e9;
+        font-weight: bold;
+        color: white!important;
+        border: 0 none!important;
+        border-radius: 0;
+        cursor: pointer;
+        font-family: 'Gilroy Regular';
+        font-size: 16px;
+        text-transform: uppercase;
+        box-shadow: 0 0 2px #4f4c52;
+        display: inline-block;
+        padding: 11px 30px!important;
+        cursor: pointer;
+        width: auto!important;
+        letter-spacing: inherit!important;
+    }
+    .form-container button {
+        background-color:#8941e9!important;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 0;
+        cursor: pointer;
+        padding: 15px 15px;
+        font-family: 'Gilroy Regular';
+        font-size: 16px;
+        text-transform: uppercase;
+        box-shadow: 0 0 2px #4f4c52;
+        width: 100%;
+    }
+    .form-container li.field.left_half, .form-container li.field.left_3 {
+        padding-right:7px;
+    }
+    .form-container li.field.right_half, .form-container li.field.right_3 {
+        padding-left:7px;
+    }
+    .form-container li.field.middle_3 {
+        padding:0 7px;
+    }
+}
+@media only screen and (min-width: 641px) {
+    .form-container li.field {
+        padding-right: 16px;
+    }
+}
+

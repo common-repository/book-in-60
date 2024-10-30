@@ -1,0 +1,629 @@
+#wpfooter {
+	display: none;
+}
+
+.wpfs-about p {
+    margin-left: 0px !important;
+}
+
+.wpfs-about ul {
+    list-style: square inside;
+}
+
+.wpfs-about .about-text {
+    min-height: 30px;
+}
+
+.tab-content {
+	padding:20px;
+}
+
+.calendar {
+	width:100%;
+	border-collapse: collapse;
+    table-layout: auto;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.well {
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
+    display: none;
+    margin: 1em;
+    max-width: 500px!important;
+    width: 100%;
+}
+.well {
+    min-height: 20px;
+    padding: 19px!important;
+    margin-bottom: 20px!important;
+    background-color: #f5f5f5!important;
+    border: 1px solid #e3e3e3!important;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%)!important;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%)!important;
+}
+
+.well .popup_close {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border-radius: 2px;
+    background: none;
+    border: 0;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+#purchase_details {
+    width: 25%;
+}
+.modal-header table {
+    width: 100%;
+}
+
+.calendar thead {
+    border-bottom: 1px solid #eee;
+}
+
+.calendar th {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-align: left;
+}
+
+.calendar td {
+    padding: 12px 30px;
+    border-top: 1px solid #eee;
+}
+
+.calendar.work-schedule tbody td {
+    padding: 30px 30px 20px;
+}
+
+.calendar thead tr td {
+    border: 1px solid #ebe9eb;
+    background: #F8F6F8;
+}
+
+.calendar thead tr td h1 {
+	font-size: 20px;
+	padding: 0;
+	line-height: 1.2;
+}
+
+.calendar .day_to {
+	margin:0 5px;
+}
+
+.calendar .day-description {
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+#ga_provider_details {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.schedule_day {
+    width: 25%;
+    height: 80px;
+}
+
+.week_day {
+    display: inline-block;
+}
+
+.week_day {
+    vertical-align: middle;
+}
+
+.week_day input[type="checkbox"] {
+    display: none !important;
+}
+
+.week_day input[type="checkbox"]:checked+span {
+    background-color: #007cba;
+}
+
+.week_day span {
+    background-color: #ebe9eb;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0px 2px 4px 2px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+input[type=number] {
+    padding: 0 0 0 8px;
+}
+
+.slot-delete {
+    cursor: pointer;
+    background: #5f6e77;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    -moz-transition: all 0.15s ease-out;
+    -webkit-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+
+p.help-text {
+	margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.pt-md {
+	padding-top:20px;
+}
+
+.provider_holidays .holiday, #custom_dates_period .custom-date {
+    background: #f5f5f5;
+    padding: 10px;
+    /* margin-bottom: 5px; */
+    /* border: 1px solid #ddd; */
+    display: inline-block;
+    /* margin-right: 5px; */
+    position: relative;
+}
+
+.holiday-delete {
+    float:right;
+}
+
+.form-table td {
+    vertical-align: top!important;
+}
+
+#service_price {
+    width: 100px;
+}
+
+#duration-hours, #duration-minutes, #frequency_discount, #percentage_discount {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100px;
+}
+
+#number_uses, #expiry_date {
+    width: 140px;
+}
+
+.fa-thumbs-up:before {
+    content: "\f164";
+}
+
+.fa-calendar:before {
+    content: "\f073";
+}
+
+.popup_content {
+  margin: 10px;
+  padding: 0 10px;
+  max-width: 60%;
+  border: 2px solid #444;
+  background: white;
+}
+
+.radio-block {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.flat_price-input {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    width: 100px;
+}
+
+.small-input, .input-sm {
+    width: 100px;
+}
+
+.input-xs {
+    width: 50px;
+}
+
+.table-price-ranges {
+    width:100%;
+}
+
+.table-price-ranges th {
+    padding: 0;
+}
+
+.table-price-ranges td {
+    padding:10px 0 0;
+}
+
+.delete-price-parameter:after, .holiday-delete:after {
+    background-image: url(../img/close.svg);
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: center;
+    display: block;
+    cursor: pointer;
+}
+
+#amount_discount, #service_price , #addon_price{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 100px;
+}
+
+.left-span {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+}
+
+.right-span {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+
+.n-b-r {
+    border-right:0!important;
+}
+
+.n-b-l {
+    border-left:0!important;
+}
+
+.input-group-addon {
+    padding: 3px 12px 7px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #7e8993;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left:-5px;
+}
+
+.input-group-addon-l {
+    padding: 3px 12px 7px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #7e8993;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right:-5px;
+}
+
+.layout_wrap label>input+img {
+    cursor: pointer;
+    border: 2px solid transparent;
+    max-width: 100%;
+}
+
+.layout_wrap label {
+    width: 130px;
+    width: 90px;
+    text-align: center;
+    margin-right: 7px;
+    float: left;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.form-table input.tog, .form-table input[type=radio] {
+    margin-top: -4px;
+    margin-right: 4px;
+    float: none;
+}
+
+.layout_wrap label>input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.layout_wrap label>input:checked+img {
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.layout_wrap label>input:checked~* {
+    border: 2px solid #000;
+}
+
+.layout_wrap label>input+img {
+    cursor: pointer;
+    border: 2px solid transparent;
+    max-width: 100%;
+}
+
+.tab-content {
+    background-color: #ffffff;
+    border: 1px solid #d5d2d2;
+    border-top: 0;
+}
+
+.nav-tab-active, .nav-tab-active:focus, .nav-tab-active:focus:active, .nav-tab-active:hover {
+    border-bottom: 1px solid #ffffff;
+    background: #ffffff;
+    color: #000;
+}
+
+#lead-zapier-form .widefat td, #lead-zapier-form .widefat th, #booking-zapier-form .widefat td, #booking-zapier-form .widefat th , 
+    #crm-form .widefat td, #crm-form .widefat th {
+    padding: 15px!important;
+}
+
+.form-table td, .form-table tr {
+    padding-top: 20px!important;
+}
+
+.invoice-box {
+    padding: 30px;
+    line-height: 30px;
+    font-family: inherit;
+    color: #555;
+}
+
+            .invoice-box table {
+                width: 100%;
+                line-height: inherit;
+                text-align: left;
+            }
+
+            .invoice-box table td {
+                padding: 5px;
+                vertical-align: top;
+            }
+
+            .invoice-box table tr td:nth-child(2) {
+                text-align: right;
+            }
+
+            .invoice-box table tr.top table td {
+                /*padding-bottom: 20px;*/
+            }
+
+            .invoice-box table tr.top table td.title {
+                font-size: 45px;
+                line-height: 45px;
+                color: #333;
+            }
+
+            .invoice-box table tr.information table td {
+                padding-bottom: 40px;
+            }
+
+            .invoice-box table tr.heading td {
+                background: #eee;
+                border-bottom: 1px solid #ddd;
+                font-weight: bold;
+                width: 80%;
+            }
+
+            .invoice-box table tr.details td {
+                padding-bottom: 20px;
+            }
+
+            .invoice-box table tr.item td {
+                border-bottom: 1px solid #eee;
+            }
+
+            .invoice-box table tr.item.last td {
+                border-bottom: none;
+            }
+
+            .invoice-box table tr.total td:nth-child(2) {
+                border-top: 2px solid #eee;
+                font-weight: bold;
+            }
+
+.invoice-container {
+    width: 70%;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.button-container {
+    width: 20%;
+    border: 1px solid #eee;
+    background: #fff;
+    margin-left: 2%;
+    padding: 60px;
+}
+
+.booking-details-form {
+    display: flex;
+}
+
+.view-booking-btns {
+    font-size: 14px!important;
+    width: 100%;
+    padding: 8px 30px!important;
+    margin-bottom: 8px!important;
+}
+
+.view-booking-btns-back {
+    font-size: 14px!important;
+    width: 100%;
+    padding: 5px 30px!important;
+    background: #48535a!important;
+    border-color: #48535a!important;
+    text-align: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+}
+.modal-window header {
+  font-weight: bold;
+}
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+
+/* Demo Styles */
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-window > div {
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 0;
+  padding: 10px 20px;
+}
+
+
+.modal-window {
+    background-color: #000000a6;
+}
+
+.div-table {
+  display: table;         
+  width: auto;          
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.div-table-row-header {
+  display: table-row;
+  width: auto;
+  clear: both;
+  background-color: #2271b1;
+  color: #fff;
+}
+.div-table-row {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+.div-table-col {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 125px;         
+  padding: 10px ; 
+}
+
+.div-table-row:nth-child(odd) {
+  background-color: #f1f8ff;
+}
+
+.modal-container {
+    padding: 25px!important;
+}
+
+.div-table-row-header .div-table-col {
+    text-transform: uppercase;
+}

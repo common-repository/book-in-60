@@ -1,0 +1,1883 @@
+body {
+    font: 16px 'Gilroy Regular', Gilroy Regular, Helvetica Neue, Helvetica, Arial, sans-serif!important;
+    color: #a0a4ab!important;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: 1px !important;
+    line-height: 1.6!important;
+    margin:0;
+    padding:0;
+}
+
+*, *::before, *::after {
+    word-break: initial!important;
+    word-wrap: unset!important;
+}
+
+ul, ol {
+     margin: 0 auto!important; 
+     padding: 0!important;
+}
+
+span {
+    color:#a0a4ab;
+}
+p {
+    margin: 0.85em 0;
+    color:#a0a4ab;
+}
+label {
+    /* font-weight: bold; */
+    font-size: 0.92em;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #999;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #999;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #999;
+}
+
+header {
+   /* position: sticky;
+    position: -webkit-sticky;*/
+    top: 0;
+    background: #fff;
+    z-index: 9999999;
+}
+
+.header-container {
+    box-shadow: 1px 10px 25px #f5f5f5;
+}
+
+.header-container ul li .green-border {
+    border-bottom: 3px solid #a1e941;
+}
+
+.header-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.header-text-container .title {
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    padding-top:5px;
+}
+
+.header-text {
+    /*display: flex;*/
+   /* flex-flow: column;*/
+    padding: 15px;
+    line-height: 1.3;
+}
+
+.header-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+  vertical-align: middle;
+  border-right: 1px solid #e3e3e3;
+}
+
+.col .text {
+    font-weight: bold;
+    color: #585e63;
+    line-height: 1.3;
+}
+
+.col.logo {
+    width:165px;
+}
+
+.col.bedroom, .col.bathroom {
+    width:140px;
+}
+
+.col.address, .col.date, .col.service {
+    width:20%;
+}
+
+.col.address, .col.service, .header-text .text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+.header-text-subtotal .text {
+    font-weight: bold;
+    color:#fff;
+    font-size: 30px!important;
+}
+
+.col:last-child {
+    background: #585e63;
+    
+}
+
+#multisteps {
+    display: none;
+    width:100%;
+/*     height:100%; */
+}
+
+.header-col {
+    padding: 22px;
+    text-align:center;
+}
+
+.header-col {
+    padding: 22px;
+}
+
+.col:last-child .header-text span {
+    color: #fff;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.col:last-child {
+    color:#fff;
+    border-right: 0
+}
+
+.main-form {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom:80px;
+}
+.form-left {
+    width: 65%;
+    margin: 60px 0 0;
+}
+.form-right {
+    width: 35%;
+    margin: 60px 0 0;
+}
+.container {
+    padding:60px;
+    text-align: center;
+}
+.form-right .container {
+    display: none;
+}
+.container.left {
+    margin-right: 20px;
+    text-align: left;
+    padding-top: 20px;
+    padding: 0;
+    border: 1px solid #e3e3e3;
+}
+.single-page-container .left {
+    background-color: #F7F8FA;
+    margin-right: 30px;
+    text-align: left;
+    padding-top: 20px;
+    padding: 0;
+}
+.single-page-container .right {
+    background-color: #F7F8FA;
+}
+span.booking-title {
+    text-align: center;
+    font-size: 35px;
+    display: block;
+    padding: 55px 0 0;
+    font-weight: bold;
+    color:#585e63;
+}
+
+.calendar-display {
+    margin-top:60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.datepicker-time-slots {
+    width: 59%;
+    padding: 40px 40px 0;
+    margin: 0 auto;
+    display: none;
+}
+
+.datepicker-time-slots-default {
+    width: 59%;
+    padding: 40px 40px 0;
+    margin: 0 auto;
+}
+
+.datepicker-time-slots ul, .datepicker-time-slots-default ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.datepicker-time-slots ul li, .datepicker-time-slots-default ul li {
+    width: 30%;
+    margin: 9px;
+}
+
+.datepicker-time-slots ul label, .datepicker-time-slots-default ul label {
+    white-space: normal;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 14px !important;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 13px!important;
+    justify-content: center;
+}
+
+.datepicker-time-slots ul li input, .datepicker-time-slots-default ul li input {
+    display: none;
+}
+
+.datepicker-time-slots ul li input:checked + label, .datepicker-time-slots-default ul li input:checked + label {
+    /* background: #8941e9; */
+    color: #8941e9;
+    border: 2px solid #8941e9;
+    box-shadow: 1px 5px 5px #f5f5f5;
+    font-weight: bold;
+}
+
+.datepicker-holidays {
+    width: 50%;
+    padding: 40px;
+    margin: 20px auto;
+    color: #000000;
+    background-color: #fffeea;
+    border: 1px solid #f2eea7;
+    display:none;
+}
+
+.datepicker-holidays .holiday-date {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ae3535;
+}
+
+.datepicker-holidays .holiday-name {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.datepicker-holidays .holiday-description {
+    font-size: 16px;
+}
+
+span.booking-subtitle {
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 40px;
+    color: #a0a4ab;
+}
+span.booking-row-title {
+    display: block;
+    margin: 35px auto 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-align: center;
+}
+.right-box {
+    color: #797979;
+    font-weight: 400;
+    padding: 20px 10px;
+}
+.box-header {
+    font-weight: bold;
+    color: #3c3c3c;
+    margin: 10px 0 0;
+    display: block;
+}
+.booking-summary-header {
+    background: #f5f5f5;
+    text-transform: uppercase;
+    padding:15px 0;
+}
+.booking-summary-header p {
+    color:#585e63;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.separator {
+    border-top: 1px solid #e3e3e3;
+    max-width: 95%;
+    margin: 30px auto;
+}
+.module-content {
+    border-color: #ebebeb;
+    padding:20px;
+}
+.col-content {
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+}
+.entry-content-wrapper {
+    padding:10px 15px;
+    list-style-type:none;
+    margin-left: 0px;
+    text-align: left;
+}
+.entry-content-wrapper li {
+    padding: 3px 0;
+}
+.entry-content-wrapper.subtotal {
+    /*margin: 0 5%;*/
+}
+.booking-summary-left {
+    width: 56%;
+    display: inline-block;
+}
+.booking-summary-right {
+    width: 25%;
+    display: inline-block;
+    text-align: right;
+}
+.booking-subtotal-left {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+}
+.booking-subtotal-right {
+    width: 50%;
+    text-align: right;
+    display: inline-block;
+}
+.total-text {
+    /*font-weight: bold;*/
+}
+.total-price {
+    font-weight: 500;
+    font-size: 25px;
+    color: #8b3da3;
+}
+.booking-total-summary-left {
+    width: 33%;
+    display: inline-block;
+}
+.recurring-text {
+    font-weight: bold;
+    font-size: 25px;
+}
+.text-right {
+    text-align: right;
+}
+.separator {
+    border-top: 1px solid #e3e3e3;
+    max-width: 100%;
+    margin: auto;
+}
+.booking-total-summary-right {
+    text-align: right;
+    width: 66%;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 36px;
+    color: #8b3da3;
+}
+ul.form-container {
+    list-style-type: none!important;    
+    padding: 0;
+}
+#multisteps_wrapper ul {
+    list-style: none!important
+}
+ul.form-container .header {
+    text-align: center;
+    padding-bottom:25px;
+}
+.form-container p {
+    padding: 0 40px;
+}
+span.booking-form-separator {
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    display: inline-block;
+    margin-top: 35px;
+}
+.home-access, .apply-coupon {
+    padding: 10px 40px;
+}
+.row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8, .row-9 {
+    margin-bottom:15px;
+}
+.row-11 {
+    font-size: 14px;
+}
+span.forms-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #444444;
+    display: block;
+    padding: 35px 40px 0;
+}
+ul.form-container li.field {
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+ul.form-container > li {
+    margin-left: 0;
+}
+ul.form-container li.field {
+    clear: both;
+}
+.form-container form li, .form-container li {
+    margin-left: 0!important;
+    list-style-type: none!important;
+    list-style-image: none!important;
+    list-style: none!important;
+    overflow: visible;
+}
+.extras-box {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+label.inline, input[type="checkbox"] + label {
+    font-size: inherit!important;
+    margin-bottom: 30px;
+    display: inherit;
+    color: #a0a4ab;
+}
+input:not([type='checkbox']), textarea, select {
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    padding: 10px!important;
+    outline: none;
+    font: 1em "Gilroy Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #a0a4ab;
+    margin: 0;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    border-radius: 0px;
+}
+input[type="checkbox"] {
+    /*display:none!important;*/
+}
+ select {
+    -webkit-appearance: none;
+    border-radius: 0px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAYAAAC+ct6XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjBBRUQ1QTQ1QzkxMTFFMDlDNDdEQzgyNUE1RjI4MTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjBBRUQ1QTU1QzkxMTFFMDlDNDdEQzgyNUE1RjI4MTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGMEFFRDVBMjVDOTExMUUwOUM0N0RDODI1QTVGMjgxMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGMEFFRDVBMzVDOTExMUUwOUM0N0RDODI1QTVGMjgxMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pk5mU4QAAACUSURBVHjaYmRgYJD6////MwY6AyaGAQIspCieM2cOjKkIxCFA3A0TSElJoZ3FUCANxAeAWA6IOYG4iR5BjWwpCDQCcSnNgxoIVJCDFwnwA/FHWlp8EIpHSKoGgiggLkITewrEcbQO6mVAbAbE+VD+a3IsJTc7FQAxDxD7AbEzEF+jR1DDywtoCr9DbhwzDlRZDRBgACYqHJO9bkklAAAAAElFTkSuQmCC);
+    background-position: center right;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    display: inline-block;
+}
+.how-often label {
+    white-space: normal;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 15px;
+    padding: 20px 26px !important;
+    text-align: center;
+    width: 100%;
+    max-width: 95%;
+    margin: auto !important;
+    display: block;
+}
+.popular {
+    display: none;
+}
+ul.field_radio, ul.field_checkbox, ul.addon-services-checkbox {
+    padding:0;
+}
+ul.addon-services-checkbox {
+    padding: 10px 35px 0;
+    margin: 0 auto;
+}
+ul.field_radio li {
+    width: 20%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    margin: 0 10px;
+    min-height: 28px;
+    vertical-align: top;
+    font-size: 90%;
+    display: flex;
+    flex-direction: inherit;
+}
+ul.field_radio li input {
+    display: none;
+}
+ul.field_radio li label {
+    white-space: normal;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px 20px !important;
+    text-align: center;
+    width: 100%;
+    /*max-width: 95%;*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    font-size:13px!important;
+}
+ul.field_radio li input:checked + label {
+    /* background: #8941e9; */
+    color: #8941e9;
+    border: 2px solid #8941e9;
+    box-shadow: 1px 5px 5px #f5f5f5;
+    font-weight: bold;
+}
+ul.field_checkbox, ul.field_radio {
+    margin: 6px 0;
+    padding: 0;
+    display: flex;
+}
+.addon-services-checkbox label {
+    text-transform: capitalize;
+}
+.addon-services-checkbox input {
+    display: none!important;
+}
+.addon-services-checkbox li.refrigerator label:before, .addon-services-checkbox li.oven label:before,
+.addon-services-checkbox li.pets label:before, .addon-services-checkbox li.saturday-service label:before,
+.addon-services-checkbox li.green-cleaning label:before, .addon-services-checkbox li.gift-card label:before {
+    border-radius: 5px;
+    display: block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background: #fff !important;
+    min-height:50px;
+    cursor: pointer;
+}
+.addon-services-checkbox li input:checked + label:before {
+    /*background: #8b3da3 !important;*/
+    border: 2px solid #8941e9!important;
+    box-shadow: 1px 5px 5px #f5f5f5;
+    box-sizing: border-box;
+}
+.addon-services-checkbox li input:checked + label {
+    color:#8941e9;
+}
+ul.addon-services-checkbox li {
+    width: 20%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    margin: 0;
+    min-height: 28px;
+    vertical-align: top;
+    font-size: 90%;
+    text-align: center;
+    padding: 7px;
+}
+#no-refrigerator, #no-oven {
+    display:none;
+}
+
+/*form styles*/
+#msform {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+}
+/*buttons*/
+#msform .action-button {
+    width: 150px;
+    background: #8941e9;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 15px 15px;
+    margin: 60px auto;
+    font-family: 'Gilroy Regular';
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 0 2px #4f4c52;
+    display: inline-block;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    background:#a1e941;
+}
+/*headings*/
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #27AE60;
+    color: white;
+}
+
+#how-often {
+    width:85%;
+    margin: 0 auto;
+}
+
+#service-type {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-size {
+    width: 25%;
+}
+
+.booking-service {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.lead-form-services-container, .lead-form-frequency-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.lead-form .form-inline button {
+    width: 100%;
+    margin: 5px;
+}
+
+#lead-form.form-inline input, .option.booking-service-lead {
+    width: 49%!important;
+    margin: 1% 0.5%!important;
+}
+
+.booking-service-lead, .frequency-lead {
+    width: 100%;
+    margin: 1% 0.5%!important;
+}
+
+.main.form-container {
+    width: 98%;
+    margin: 5px!important;
+}
+
+.option.form-container {
+    width: 45%;
+    flex: auto;
+    margin: 5px!important;
+}
+
+.address-form {
+    width: 45%;
+    flex: auto;
+    margin: 3px auto!important;
+}
+
+.single-page-container {
+    display: none;
+}
+
+.single-page-container .main-form {
+    max-width: 1280px;
+}
+
+.single-page-container .main.form-container, .gift-card-page-container .main.form-container {
+    width: 100%;
+}
+
+.single-page-container .form-left, .single-page-container .form-right,
+.gift-card-page-container .form-left, .gift-card-page-container .form-right {
+    margin: 0;
+}
+
+.gift-card-page-container .form-left {
+    width: 45%;
+}
+
+.gift-card-page-container .form-right {
+    width: 55%;
+}
+
+.gift-card-page-container .control-group.card-no {
+    width: 100%;
+    padding-bottom: 7px;
+    /* margin-right: 10px; */
+}
+
+.gift-card-page-container  .control-group.card-name {
+    padding-bottom: 7px;
+}
+
+.gift-card-page-container .control-group.expiry {
+    margin-right: 5px;
+    width: 72%;
+}
+
+.gift-card-page-container .gift-card-template {
+    margin-top: 20px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.gift-card-img-container {
+    display: flex;
+}
+
+.gift-card-page-container .gift-card-company-name {
+    padding: 30px 25px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.gift-card-page-container .gift-card-amount {
+    padding: 30px 25px;
+    width: 24%;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.gift-card-page-container .gift-card-amount span {
+    color: #ffffff;
+}
+
+.gift-card-page-container .control-group.expiry input {
+    width: 50%!important;
+}
+
+.gift-card-page-container .control-group.cvc {
+    width: 25%;
+}
+
+.gift-card-page-container .content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 220px;
+}
+
+.gift-card-page-container .content-left {
+    width: 40%;
+    display: block;
+}
+
+.gift-card-page-container .content-right {
+    width: 60%;
+    padding: 30px 20px;
+}
+
+.gift-card-page-container .gift-card-recipient {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.gift-card-page-container .currencySymbol {
+    position: absolute;
+    display: inline-block;
+    left: 13px;
+    font-weight: 700;
+    bottom: 5px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.gift-card-page-container .input-container {
+    padding: 20px 40px!important;
+}
+
+.gift-card-page-container .control-group .controls {
+    position: relative;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field, .form__field-sign {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: inherit;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder, .form__field-sign::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: inherit;
+  cursor: text;
+  top: 8px;
+  left: 10px;
+}
+
+.form__field-sign:placeholder-shown ~ .form__label {
+  font-size: inherit;
+  cursor: text;
+  top: 8px;
+  left: 30px;
+}
+
+#b60_giftcard_amount {
+    padding-left: 30px!important;
+}   
+
+.form__label {
+  position: absolute;
+  top: -7px;
+  display: block;
+  transition: 0.2s;
+  font-size: 10px;
+  color: #b7b6b6;
+  left: 10px;
+  background-color: #fff;
+  padding: 0 3px;
+}
+
+.form__field:focus, .form__field-sign:focus {
+  padding-bottom: 6px;
+  /*font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);*/
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label, .form__field-sign:focus ~ .form__label {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  display: block;
+  transition: 0.2s;
+  font-size: 10px;
+  color: #b7b6b6;
+  background-color: #fff;
+  padding: 0 3px;
+}
+
+.expiry-month, .expiry-year, .expiry-cvc {
+    width: 32.5%;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid, .form__field-sign:required, .form__field-sign:invalid {
+  box-shadow: none;
+}
+
+
+
+.single-page-container .container {
+    background-color:#F7F8FA;
+}
+
+.single-page-container  .control-group.card-no {
+    width: 64%;
+}
+
+.single-page-container .address-form, .single-page-container .booking-service, .single-page-container span.booking-title,
+.single-page-container span.booking-subtitle, .single-page-container .coupon-container {
+    width: 100%;
+    padding:10px 40px 20px;
+}
+
+.single-page-container span.booking-title {
+    text-align: left;
+    font-size: 21px;
+    display: block;
+    font-weight: bold;
+    color: #2B3243;
+    text-transform: uppercase;
+    padding:40px 40px 0;
+}
+
+.single-page-container span.booking-subtitle {
+    text-align: left;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 0;
+    color: #707070;
+}
+
+.single-page-container .row-step-1, .single-page-container .row-step-2, .single-page-container .row-step-3, .single-page-container .row-step-4,
+.single-page-container .row-step-5, .single-page-container .row-step-6, .single-page-container .row-step-6 {
+    padding: 30px 20px 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.single-page-container #services-checkout {
+    margin-bottom: 10px;
+}
+
+.single-page-container .booking-summary-header {
+    background: transparent;
+    text-transform: uppercase;
+    padding: 40px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.single-page-container #summary-right {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 160px;
+}
+
+.single-page-container .items-checkout img {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.single-page-container .extras-box {
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.single-page-container .addon-services-checkbox li input:checked + label {
+    width: 100%;
+}
+
+.single-page-container .subtotal li {
+    list-style-type: none!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-page-container .items-checkout li {
+    list-style-type: none!important;
+    margin-bottom: 15px;
+}
+
+.single-page-container .items-checkout .fa-check:before {
+    color: #a5f20d;
+}
+
+.single-page-container .booking-summary-right {
+    width: 23%;
+}
+
+.single-page-container #how-often {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px!important;
+}
+
+.single-page-container ul.field_radio li input:checked + label {
+    background: #8941E9;
+    border: 0!important;
+    color: #ffffff;
+}
+
+.single-page-container ul.field_radio li {
+    width: 100%;
+    margin-left: 5px!important;
+    margin-right: 5px;
+}
+
+.single-page-container .addon-services-checkbox li input:checked + label:before {
+    /*background: #8941e9 !important;*/
+}
+
+.single-page-container .extras-box {
+    text-align: left;
+}
+
+.single-page-container label.inline, input[type="checkbox"] + label {
+    width:100%;
+}
+
+.single-page-container .subtotal {
+    padding:0 40px!important;
+}
+
+.single-page-container .recurring-price-container .module-content {
+    padding-top: 0;
+}
+
+.single-page-container ul.field_radio li label {
+    padding: 10px!important;
+}
+
+.single-page-container .addon-services-checkbox li input:checked + label:before {
+    border: 1px solid #8941e9!important;
+}
+
+.single-page-container .cal-single-page, .single-page-container .time-single-page {
+    width: 50%;
+}
+
+.single-page-container .cal-single-page {
+    margin-right: 10px;
+}
+
+.single-page-container .time-single-page {
+    margin-left: 10px;
+}
+
+.single-page-container .single-cal-time-container {
+    display:flex;
+    padding: 20px 40px;
+}
+
+.datepickers-container .datepicker, .single-page-container .datepicker  {
+    width: 335px!important;
+}
+
+.datepickers-container .datepicker--cell-day, .single-page-container .datepicker--cell-day {
+    width: 14.28571%!important;
+}
+
+.datepickers-container .datepicker--cell, .single-page-container .datepicker--cell {
+    height:32px;
+    margin: 0;
+    background: #ffffff;
+}
+
+.m-t-xl {
+    margin-top:40px;
+}
+
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  -webkit-appearance: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    outline: none;
+    font: 1em "Gilroy Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #a0a4ab;
+    margin: 0;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    border-radius: 0px;  
+  box-sizing: border-box;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-form {
+    padding: 10px 0;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 0 40px
+}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    font: 1em "Gilroy Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #a0a4ab;
+    margin: 0;
+    margin-top: 0;
+    border-radius: 0px;
+    width:auto;
+}
+
+.form-inline button {
+  padding: 0 30px;
+  background-color: #8941e9!important;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* box-shadow: 0 0 2px #4f4c52; */
+  outline: none;
+  border-radius: 0;
+  font-weight: bold;
+  height:40px;
+  width: 100%;
+  margin: 1% 0.5%;
+}
+
+.form-inline button:hover {
+  background-color: #a1e941!important;
+  text-decoration: none;
+}
+
+.form-inline button:disabled {
+  background-color: #dddddd!important;
+  text-decoration: none;
+}
+
+.popup-container {
+
+}
+
+#booking-form {
+}
+
+.badge-tax {
+    display: inline-block;
+    /* min-width: 16px; */
+    padding: 2px 5px;
+    border-radius: 5%;
+    font-size: 10px;
+    text-align: center;
+    background: #e50b01;
+    color: #fefefe;
+    cursor: pointer;
+}
+
+.badge-exclude-frequency {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 5%;
+    font-size: 10px;
+    text-align: center;
+    background: #f3d712;
+    color: #fefefe;
+    cursor: pointer;
+}
+
+.badge-exclude-discount {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 5%;
+    font-size: 10px;
+    text-align: center;
+    background: #b2e516;
+    color: #fefefe;
+    cursor: pointer;
+}
+
+.popup_wrapper_visible {
+    z-index: 9999999!important;
+    background: #ffffff;
+}
+
+.cc-container {
+    padding: 20px 40px;
+}
+
+.cc-container label {
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.control-group {
+    display: inline-block;
+}
+
+.control-group.card-name {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.control-group.card-no {
+    width: 55%;
+    margin-right: 10px;
+}
+
+.control-group.expiry {
+    margin-right: 10px;
+}
+
+.control-group .controls {
+    display: flex;
+    margin-top: 5px;
+}
+
+.alert-error {
+    display: block!important;
+    padding: 25px 0!important;
+    text-align: center;
+    background-color: #f2070724;
+    color: #f00606;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px!important;
+}
+
+.alert-success {
+    display: block!important;
+    padding: 25px 0!important;
+    text-align: center;
+    background-color: #defabb;
+    color: #585e63;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px!important;
+}
+
+.header-col .icon {
+  display: none!important;
+}
+
+.mobile-subtotal {
+  display:none;
+}
+
+.book-multi-steps {
+    margin: 20px;
+}
+
+#b60_giftcard_message {
+    height: 100px;
+}
+
+
+#discount-section .coupon-container {
+    padding: 20px 40px;
+}
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#86ea00;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #c6c6c6;
+}
+
+.my-float{
+    margin-top:22px;
+}
+
+.show-button {
+    display: none;
+}
+
+.single-page-container {
+    max-width: 100%!important;
+}
+
+.booking-summary-header img {
+    display: inline-block!important; 
+}
+
+@media only screen and (max-width: 1280px) {
+    .col.address, .col.service, .header-text .text {
+        font-size: 17px;
+    }
+
+    #step_6 {
+        width:100%;
+    }
+
+    .header-text-subtotal .title {
+        display: none;
+    }
+
+    .mobile-subtotal {
+        display:inline-block;
+        margin-right: 50px
+    }
+
+    .swMain .content {
+      width: 100%!important;
+      margin: 0!important;
+      padding: 120px 20px 20px!important;
+    }
+
+  .header-col .icon {
+      display: inline-block!important;
+    }
+    
+    .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+    
+  .swMain ul.anchor li {
+    display: none!important;
+    width: 100%!important;
+   }
+
+   .swMain.responsive ul.anchor li {
+    display: block!important;
+    border-bottom: 1px solid #3333332b;
+   }
+
+   .swMain ul.anchor li.responsive {
+    display: block!important;
+    width: 100%!important;
+   }
+    
+  .swMain ul.anchor li.logo {
+    display: block!important;
+    border-bottom: 2px solid #a1e941;
+    border-radius: 0;
+    width: 25%;
+  } 
+
+  .swMain .tabpane {
+    width: 100%!important;
+    padding: 40px;
+  }
+    
+  .swMain ul.anchor li.logo > .header-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .swMain ul.anchor {
+    flex-direction: column;
+  }
+    
+  .swMain ul.anchor li.logo > .header-col > .icon {
+    padding-right: 10px;
+  }
+    
+
+    .header-text-container {
+        justify-content: left;
+        padding: 0 22px;
+    }
+
+    .booking-service {
+        width: 100%;
+    }
+    
+    .extras-box {
+        width: 100%;
+    }
+    
+    label.inline, input[type="checkbox"] + label {
+        width: 100%;
+    }
+    
+    #how-often {
+        width: 100%;
+    }
+    
+    .address-form {
+        width: 100%;
+    }
+    
+    .control-group.card-no {
+        width: 100%;
+        padding-bottom:20px;
+    }
+    
+    .form-right, .form-left {
+        width:100%;
+    }
+    
+    .datepicker-holidays, .datepicker-time-slots, .datepicker-time-slots-default {
+        width: 100%;
+    }
+
+    .swMain ul.anchor li a.done {
+        justify-content: left!important;
+        border-bottom: none!important;
+    }
+
+    .main.form-container {
+        width: 100%;
+    }
+
+     .sw-theme-default > .tab-content > .tab-pane, .swMain > .tab-content > .tab-pane {
+        width: 100%!important;
+        margin: 100px auto 40px!important;
+        padding: 0 40px;
+    }
+
+    .swMain ul.nav {
+        position: fixed;
+        display: flex;
+        float: left;
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+        clear: both;
+        border: 0 solid #CCCCCC;
+        background: #fff;
+        width: 100%;
+        box-shadow: 1px 10px 25px #f5f5f5!important;
+        z-index: 999999;
+        top:0;
+    }
+
+    .swMain .toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: row-reverse; */
+    }
+
+    .sw-theme-default .toolbar > .btn {
+        width: 120px;
+        background: #8941e9;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 0;
+        cursor: pointer;
+        padding: 15px 15px;
+        margin: 30px 5px 60px;
+        font-family: inherit;
+        font-size: 15px;
+        text-transform: uppercase;
+        box-shadow: 0 0 2px #4f4c52;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+    } 
+
+    .toolbar > .btn {
+        width: 120px;
+        background: #8941e9;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 0;
+        cursor: pointer;
+        padding: 15px 15px;
+        margin: 30px 5px 60px;
+        font-family: inherit;
+        font-size: 15px;
+        text-transform: uppercase;
+        box-shadow: 0 0 2px #4f4c52;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .swMain .toolbar > .btn.disabled, .sw .toolbar > .btn:disabled {
+        display: none;
+    }
+
+    .swMain a {
+        text-decoration: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1080px) {
+    .toolbar-bottom {
+        display: flex;
+        width: 100%;
+        background-color: rgb(245, 245, 245);
+        padding: 20px;
+        position: fixed!important;
+        z-index: 999999;
+        bottom: 0;
+    }
+
+    .toolbar > .btn {
+        margin: 0 5px!important;
+        width:100%!important;
+    }
+
+    span.booking-title {
+        font-size: 25px;
+        padding: 45px 0 20px;
+        line-height: 1.2;
+    }
+
+    .sw-theme-default > .tab-content > .tab-pane, .swMain > .tab-content > .tab-pane {
+        padding: 0 40px 100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .book-multi-steps {
+        width: 100%;
+        background-color: rgb(245, 245, 245);
+        padding: 20px;
+        position: fixed!important;
+        z-index: 999999;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .form-container button {
+        background: #8941e9;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 0;
+    }
+
+    .single-page-container .form-right {
+        /*display: none!important;*/
+    }
+
+    .single-page-container .left {
+        margin-right: 0;
+    }
+
+    .lead-form .form-inline input, .option.booking-service-lead {
+        width: 100%;
+    }
+
+    .single-page-container ul.field_radio li {
+        margin-left: 0!important;
+    }
+
+    .single-page-container .time-single-page {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .single-page-container .single-cal-time-container {
+        flex-direction: column;
+    }
+
+    .single-page-container .cal-single-page, .single-page-container .time-single-page {
+        width: 100%;
+    }
+
+    .show-button {
+        display: block;
+        position: absolute;
+        background: #b2bec3;
+        top: 0;
+        right: 20px;
+        z-index: 999999;
+        padding: 28px;
+    }
+
+    .show-button:hover, .show-button:focus, .show-button:focus-visible {
+        background: inherit;
+        outline: none;
+    }
+
+    .single-page-container .fixed {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        z-index: 999999;
+    }
+
+    .single-page-container .summary-content {
+        display: none;
+    }
+
+    .single-page-container .booking-summary-header {
+        background-color: #b2bec3;
+        padding: 20px;
+        margin: 0;
+        border: 0;
+    }
+
+    .booking-summary-header p {
+        color: #fff;
+    }
+
+    .float {
+        bottom: 100px;
+        right: 20px;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .form-container li.field.left_half, .form-container li.field.right_half {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        padding-right: 0;
+        float: none;
+    }
+    .form-container li.field.left_3, .form-container li.field.middle_3, .form-container li.field.right_3 {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        width: 33.3333%;
+        padding-right: 0;
+        float: none;
+    }
+    .form-container li .coupon_code {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        width: 72%!important;
+        padding-right: 0;
+        margin-right:10px;
+        float: none;
+    }
+    .coupon-container button {
+        width: 25%!important;
+        padding: 12px!important;
+    }
+    .form-container li .coupon_button {
+        background: #8941e9;
+        font-weight: bold;
+        color: white!important;
+        border: 0 none!important;
+        border-radius: 0;
+        cursor: pointer;
+        font-family: 'Gilroy Regular';
+        font-size: 16px;
+        text-transform: uppercase;
+        box-shadow: 0 0 2px #4f4c52;
+        display: inline-block;
+        padding: 11px 30px;
+        cursor: pointer;
+        width: 17%!important;
+    }
+    .form-container button {
+        background: #8941e9;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 0;
+        cursor: pointer;
+        padding: 15px 15px;
+        font-family: 'Gilroy Regular';
+        font-size: 16px;
+        text-transform: uppercase;
+        box-shadow: 0 0 2px #4f4c52;
+        width: 100%;
+    }
+    .form-container button.coupon_apply {
+        width: 30%;
+    }
+    .form-container button:disabled {
+        background-color: #eee;
+        border-width: 0;
+        color: #777;
+        cursor: not-allowed;
+    }
+    .form-container li.field.left_half, .form-container li.field.left_3 {
+        padding-right:7px;
+    }
+    .form-container li.field.right_half, .form-container li.field.right_3 {
+        padding-left:7px;
+    }
+    .form-container li.field.middle_3 {
+        padding:0 7px;
+    }
+}
+@media only screen and (min-width: 641px) {
+    .form-container li.field {
+        padding-right: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gift-card-page-container .form-left, .gift-card-page-container .form-right, .form-container button {
+        width: 100%;
+    }
+
+    .gift-card-page-container .form-right {
+        display:none;
+    }
+
+    .control-group {
+        width: 32%;
+    }
+
+    .gift-card-page-container .input-container {
+        padding: 20px!important;
+    }
+
+    ul.addon-services-checkbox li {
+        width: 50%;
+    }
+    
+    ul.field_checkbox, ul.field_radio, ul.field_radio li label {
+        display: block;
+    }
+    
+    ul.field_radio li label {
+        margin:10px 5px;
+    }
+    
+    ul.field_radio li {
+        width:100%;
+        margin:0;
+    }
+    
+    .datepicker-inline .datepicker {
+        width:100%;
+    }
+    
+    .datepicker--cell-day {
+        width: 11%!important;
+    }
+    .datepicker--cell {
+        height:50px;
+    }
+    
+    .address-form, .address-form ul li.field {
+        width: 100%;
+    }
+    
+    .container.left {
+        margin-right: 0;
+    }
+    
+    .main-form {
+        flex-direction: column-reverse;
+    }
+    
+    .single-page-container .left {
+        margin-right: 0;
+    }
+
+    .option.form-container {
+        width: 100%;
+    }
+    
+    
+    .control-group.expiry {
+        width: 100%;
+        padding-bottom:20px;
+    }
+    .control-group.expiry input {
+        width: 50%!important;
+    }
+    
+    .container.left button {
+        width:100%;
+    }
+    
+    .datepicker-time-slots ul li, .datepicker-time-slots-default ul li {
+        width: 100%;
+    }
+    
+    .datepicker-time-slots, .datepicker-time-slots-default {
+        width: 100%;
+        padding: 40px 0;
+    }
+}
